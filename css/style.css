@@ -1,0 +1,173 @@
+.black-bg {
+    background-color: #150f10;
+}
+
+.text-green {
+    color: #00d50f;
+}
+
+/* центрирование */
+.cent {
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+
+}
+/* конец */
+
+/* кнопка неоновая */
+.button {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: Consolass, sans-serif;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #00d50f;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.button__line {
+    position: absolute;
+    display: block;
+}
+
+.button__line--top {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #00d50f);
+}
+
+.button:hover .button__line--top {
+    left: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.button__line--bottom {
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #00d50f);
+}
+
+.button:hover .button__line--bottom {
+    left: -100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.button__line--left {
+    bottom: -100%;
+    left: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, #00d50f);
+}
+
+.button:hover .button__line--left {
+    bottom: 100%;
+    transition: 1s;
+}
+
+.button__line--right {
+    top: -100%;
+    right: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #00d50f);
+}
+
+.button:hover .button__line--right {
+    top: 100%;
+    transition: 1s;
+}
+
+.button:hover {
+    box-shadow: 0 0 10px #00d50f, 0 0 40px #00d50f, 0 0 80px #00d50f;
+    background-color: #00d50f;
+    color: #333;
+    transition-delay: 1s;
+}
+
+
+/* кнопка для вк */
+.animated-button-vk {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 30px;
+    overflow: hidden;
+    border: 2px solid;
+    border-bottom-width: 4px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    background: #2787f5;
+  }
+  .animated-button-vk:hover {
+    color: #2787f5;
+    background:white;
+  }
+  /* конец */
+
+  /* кнопка для дискорда (то же самое что и для вк, только с другими цветами) */
+.animated-button-ds {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 30px;
+    overflow: hidden;
+    border: 2px solid;
+    border-bottom-width: 4px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #333;
+    background: #5865F2;
+  }
+  .animated-button-ds:hover {
+    color: #5865F2;
+    background:#333;
+  }
+
+  .animated-button {
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 15px 30px;
+    overflow: hidden;
+    border: 2px solid;
+    border-bottom-width: 4px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #00d50f;
+    transition: color .3s, background .5s;
+  }
+  .animated-button:hover {
+    animation: stripes .75s infinite linear;
+    background: linear-gradient(45deg, #00d50f 25%, #333 25%, #333 50%, #00d50f 50%, #00d50f 75%, #333 75%, #333);
+    background-size: 10px 10px;
+    color: black;
+  }
+  @keyframes stripes {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 50px 0;
+    }
+  }
