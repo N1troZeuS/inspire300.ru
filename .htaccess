@@ -1,0 +1,9 @@
+AddDefaultCharset UTF-8
+
+RewriteRule ^index?$ index.php [NC,L]
+RewriteRule ^order?$ order.php [NC,L]
+RewriteRule ^galery?$ galery.php [NC,L]
+RewriteRule ^xss?$ xss.php [NC,L]
+RewriteRule ^contact?$ contact.php [NC,L]
+
+ErrorDocument 404 /404.php
